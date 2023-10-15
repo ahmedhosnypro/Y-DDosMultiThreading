@@ -70,6 +70,7 @@ print("Author    : CyberX5")
 print("Telegram  : https://t.me/CyberX5")
 print("Github    : https://github.com/2001asdfv")
 
+threads = input("Threads: ")
 ip = input("IP Target: ")
 port = int(input("Port: "))
 
@@ -142,7 +143,7 @@ def task(_port):
 
 # Create a list of threads.
 threads = []
-for i in range(10000):
+for i in range(int(threads)):
     thread = threading.Thread(target=task(port))
     threads.append(thread)
 
