@@ -65,7 +65,6 @@ banner = '''
 
 print(bcolors.OKGREEN + banner)
 
-threads = input("Threads: ")
 ip = input("IP Target: ")
 port = int(input("Port: "))
 
